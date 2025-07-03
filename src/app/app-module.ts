@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Header } from './components/header/header';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Car } from './components/car/car';
+import { Cars } from './components/cars/cars';
 
 @NgModule({
   declarations: [
     App,
-    Header
+    Header,
+    Car,
+    Cars
   ],
   imports: [
     BrowserModule,

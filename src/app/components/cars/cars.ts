@@ -9,6 +9,8 @@ import { CarInterface } from '../../CarInterface';
 })
 export class Cars {
 
+  idCount : number = 3;
+  isUpdate : boolean = false;
   car : CarInterface = {} as CarInterface;
 
   cars : CarInterface[] = [
@@ -29,6 +31,24 @@ export class Cars {
   ]
 
   saveCar() {
+    if(!this.isUpdate) {
+      this.car.id = this.idCount;
+      this.idCount++;
+      this.cars.push(this.car);
+    }
+
+    this.car = {} as CarInterface;
+    this.isUpdate = false;
+  }
+
+  update(selectedCar : CarInterface) {
+    this.car = selectedCar;
+    this.isUpdate = true;
+  }
+
+  remove(selectedCar : CarInterface) {
     
   }
+
+  
 }

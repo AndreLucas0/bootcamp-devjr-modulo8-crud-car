@@ -13,7 +13,7 @@ export class Car {
   car : CarInterface = {} as CarInterface;
   
   @Output()
-  saveEmitter = new EventEmitter;
+  saveEmitter = new EventEmitter();
 
   save() {
     this.saveEmitter.emit();

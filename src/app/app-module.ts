@@ -7,6 +7,7 @@ import { Header } from './components/header/header';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Car } from './components/car/car';
 import { Cars } from './components/cars/cars';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Cars } from './components/cars/cars';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

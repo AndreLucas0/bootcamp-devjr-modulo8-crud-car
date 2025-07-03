@@ -9,7 +9,7 @@ import { CarInterface } from '../../CarInterface';
 })
 export class Cars {
 
-  idCount : number = 3;
+  idCount : number = 4;
   isUpdate : boolean = false;
   car : CarInterface = {} as CarInterface;
 
@@ -27,6 +27,13 @@ export class Cars {
       automaker: "Honda",
       price:100000,
       year: 2012
+    },
+    {
+      id: 3,
+      name: "320i",
+      automaker: "BMW",
+      price:250000,
+      year: 2020
     }
   ]
 
@@ -47,7 +54,7 @@ export class Cars {
   }
 
   remove(selectedCar : CarInterface) {
-    
+
   }
 
   

@@ -54,7 +54,7 @@ export class Cars {
   }
 
   remove(selectedCar : CarInterface) {
-
+    this.cars = this.cars.filter(c => c.id !== selectedCar.id);
   }
 
   
